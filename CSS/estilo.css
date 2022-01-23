@@ -1,133 +1,291 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    }
+  
+body {
+    font-family: sans-serif;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
-    text-align: center;
-    margin: 0;
-    display: block;
-}
-
-.nfLogo .ui-select{
-    background-color:#fff;
-    font-size:13px
     }
 
-.hero-principal{
-    background-image: url(../Imagens/Fundo-filmes.jpg);
-    height: 500px;
-    background-position: right center;
-    background-size: cover;
-    border-top: 1px solid transparent;
-}
-
-.hero-content{
-    background-color:transparent;
-    }
-
-.layout-netflix{
-    background-color:transparent; 
-    padding-top:20px;
-    }
+.head{
+    background: url("/Imagens/fundo-filmes-large.jpg") center;
     
-.layout-netflix{
-    height:4rem;
+}
+
+.main {
+    padding-top: 4rem;
+    height: 585px;
+    z-index: 1;
+    background-position: right center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-bottom: 8px solid #222;
     }
 
-.logonetflix-header{
-    position:relative;
-    margin:0 3.5rem;
-    height:100%;
-    }
-.nfLogo{
+    
+  
+.svg-icon {
+    height:42px;
+    max-width:100%;
+    padding-right: .9rem;
+    position: relative;
     fill:#e50914;
     line-height:normal;
+    margin:0 3.5rem;
+    margin-top: 45px;
+    z-index: 1;
     }
 
-.nfLogo .svg-icon-netflix-logo{
-    height:32px;
-    width:108px;
-    padding-right: 440rem;
-    position: relative;
+  
+.header {
+    
+    display: flex;
+    max-width: 100%;
     
     }
 
-.idio{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(92, 16, 233);
-    padding-left: 0, 500px, 50px, 0;
-    position: 0, 50px, 50px, 0;
+
+.header select {
+    display: inline-flex;
+    background:#50505052;    
+    color: rgb(255, 255, 255);
+    align-self: flex-start;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 45px;
+    margin-left: auto;
+    z-index: 1;
+    }
   
+.header a {
+    display: inline;
+    background: #e50914;
+    color: white;
+    align-self: flex-start;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 45px;
+    margin-right: 50px;
+    z-index: 1;
+    }
+  
+.main-child {
+    z-index: 1;
+    justify-items: center;
+    }
+  
+.main h1 {
+    font-size: 54px;
+    max-width: 720px;
+    }
+  
+.main h2 {
+    font-size: 26px;
+    margin-top: 10px;
+    }
+
+.main-child p {
+    margin-bottom: 0px;
 }
+  
+.cta-form{
+    display: inline-flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  
+    }
+  
+.cta-form input {
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 18px auto;
+    font-family: sans-serif;
+    color: black;
+    }
+  
+.cta-form button {
+    background: #e50914;
+    margin-bottom: 0px;
+    border: none;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 10px;
+    }
+    
 
-.hero-text{
-    font-size: 36px;
+.main p {
+    font-size: 19px;
+    margin-top: 40px;
+    }
+  
+.gradient {
+    background: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+     );
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    }
+  
+.hero-tv {
+    background: black;
+    padding: 3rem 0;
+    z-index: 1;
+    border-bottom: 8px solid #222;
 }
-
-.hero-tv-text{
-    background-position: right center;
-}
-
-.hero-tv-right{
-    background-image: url(../Imagens/tv.png);
-    height: 500px;
-    background-position: right center;
-    background-size: 600px;
-    background-repeat: no-repeat;
-    padding-left: 50px;
-    margin-right: 100px;
-    padding-top: 15px;
- }
-
-.hero-offline{
-    background-image: url(../Imagens/mobile.jpg);
-    height: 500px;
-    background-position: left;
-    background-size: 500px;
-    background-repeat: no-repeat;
-    padding-right: 50px;
-}
-
-.hero-full{
-    background-image: url(../Imagens/device-mac.png);
-    height: 500px;
-    background-position: right;
-    background-size: 500px;
-    background-repeat: no-repeat;
-    padding-left: 50px;
-    margin-right: 100px;
-}
-
-.hero-kids{
-    background-image: url(../Imagens/inf-funfo.png);
-    height: 500px;
-    background-position: left;
-    background-size: 500px;
-    background-repeat: no-repeat;
-    padding-right: 50px;
-}
-
-.hero-tv-text1{
-    padding-top: 20px;
-    padding-right: center;
-    margin-left: 0;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-left: 125px;
-    padding-top: 50px;
-    padding-bottom: 150px;
-    padding-right: 25px;
-    width: 390px;
-    height: 300px;
+  
+.hero-tv h1 {
+    font-size: calc( 30px + (16 - 8) * (7vw - 40px) / (80 - 40) ); 
+    margin-bottom: 16px;
+    margin-left: 150px;
+    
 }
 
  
-.hero-tv-text2{
-    padding-top: 20px;
-    padding-left: center;
-    margin-right: 5000;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 750px;
-    padding-right: 100px;
-    padding-bottom: 150px;
+.hero-tv p {
+    margin-left: 150px;
+    font-size: calc( 16px + (16 - 8) * (7vw - 40px) / (80 - 40) ); 
 }
+  
+.hero {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+}
+
+  
+.hero-offline .hero > div:first-child {
+    order: 2;
+    }
+  
+.hero-offline .img-tv {
+    order: 1;
+}
+
+.img-tv img{
+    max-width:500px;
+    max-height:450px;
+    width: auto;
+    height: auto;
+   
+}
+
+.hero-offline h1 {
+    font-size: calc( 30px + (16 - 8) * (7vw - 40px) / (80 - 40) ); 
+    margin-bottom: 16px;
+    margin-right: 150px;
+}
+
+.hero-offline p {
+    font-size: calc( 16px + (16 - 8) * (7vw - 40px) / (80 - 40) );
+    margin-right: 150px;
+}
+
+.mobile img{
+    max-width:500px;
+    max-height:450px;
+    width: auto;
+    height: auto;
+    margin-bottom: 5vw;
+    margin-left: 4vw;
+}
+
+.hero-full{
+    border-top: 8px solid #222;
+}
+
+.hero-full h1 {
+    font-size: calc( 30px + (16 - 8) * (7vw - 40px) / (80 - 40) ); 
+    margin-bottom: 16px;
+    margin-left: 150px;
+}
+
+.hero-full p {
+    font-size: calc( 16px + (16 - 8) * (7vw - 40px) / (80 - 40) );
+    margin-left: 150px;
+}
+
+.mac img {
+    max-width:500px;
+    max-height:450px;
+    width: auto;
+    height: auto;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+}
+  
+.hero-kids{
+    border-top: 8px solid #222;
+}
+
+.hero-kids .hero > div:first-child {
+    order: 2;
+}
+  
+.hero-kids .inf-funfo {
+    order: 1;
+    
+    }
+
+.hero-kids h1 {
+    font-size: calc( 30px + (16 - 8) * (7vw - 40px) / (80 - 40) ); 
+    margin-bottom: 16px;
+    margin-right: 150px;
+}
+
+.hero-kids p {
+    font-size: calc( 16px + (16 - 8) * (7vw - 40px) / (80 - 40) );
+    margin-right: 150px;
+}
+
+.inf-funfo img{
+    max-width:500px;
+    max-height:450px;
+    width: auto;
+    height: auto;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+    margin-left: 4vw;
+}
+  
+
+.faq{
+    border-top: 8px solid #222;
+}
+
+.footer {
+    padding: 4rem 0 2rem 0;
+    border-top: 8px solid #222;
+    background: black;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+  
+.footer p {
+    margin-top: 2rem;
+    color: #757575;
+    font-size: 13px;
+} 
