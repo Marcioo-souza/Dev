@@ -107,39 +107,77 @@
               </div>
             </div>
           </section>
-          <nav>
-            <div class="faq">
-                <h1 class="faq-title">Perguntas frequentes</h1>
-                <div class="dropdown">
-                    <div class="faq-list-item">
-                        <button onclick="myFunction()" class="faqbtn">O que é a Netflix?</button>
-                        <div id="myDropdown" class="dropdown-content">
-                        <a>A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet. Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</a>
-                      </div>
-                      </div>
-                    <div class="faq-list-item">
-                        <button onclick="myFunction()" class="faqbtn">Quanto custa a Netflix?</button>
-                        <a>Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$25,90 a R$55,90 por mês. Sem contrato nem taxas extras.</a>
-                    </div>
-                    <div onclick="myFunction()" class="faq-list-item">
-                        <button class="faqbtn">Onde posso assistir?</button>
-                        <a>Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.</a>
-                    </div>
-                    <div onclick="myFunction()" class="faq-list-item">
-                        <button class="faqbtn"> Como faço para cancelar?</button>
-                        <a>A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.</a>
-                    </div>
-                    <div onclick="myFunction()" class="faq-list-item">
-                        <button class="faqbtn">O que eu posso assistir na Netflix?</button>
-                        <a>A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.</a>
-                    </div>
-                    <div onclick="myFunction()" class="faq-list-item">
-                        <button class="faqbtn">A Netflix é adequada para crianças?</button>
-                        <a>A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos pais. O recurso de controle dos pais, incluso nos perfis para crianças e protegido por PIN, permite restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não quer que elas assistam.</a>
+         <section class="faq">
+            <h1>Perguntas frequentes</h1>
+            <div class='question'>
+              <button class="accordion">
+                  <input type='checkbox' id='question-1'>
+                  <label for='question-1'>O que é a Netflix?</label>
+                  <div class='answer'> A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.
+                  <br>
+                  <br>
+                  Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
                   </div>
+              </button>
+          </div>
+          <div class='question'>
+              <button class="accordion">
+                  <input type='checkbox' id='question-2'>
+                  <label for='question-2'>Quanto custa a Netflix?</label>
+                  <div class='answer'>Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$21,90 a R$45,90 por mês. Sem contrato nem taxas extras.
+                  </div>
+              </button>
+          </div>        
+          <div class='question'>
+              <button class="accordion">
+                  <input type='checkbox' id='question-3'>
+                  <label for='question-3'>Onde posso assistir?</label>
+                  <div class='answer'>Assista onde quiser, o quanto quiser e em um número ilimitado de aparelhos. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.
+                      <br>
+                      <br>
+                      Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.
+                  </div>
+              </button>
+          </div>   
+          <div class='question'>
+              <button class="accordion">
+                  <input type='checkbox' id='question-4'>
+                  <label for='question-4'>Como faço para cancelar?</label>
+                  <div class='answer'>A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.
+                  </div>
+              </button>
+          </div>
+          <div class='question'>
+              <button class="accordion">
+                  <input type='checkbox' id='question-5'>
+                  <label for='question-5'>O que eu posso assistir na Netflix?</label>
+                  <div class='answer'>A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.
+                  </div>
+              </button>
+          </div>
+          <div class='question'>
+              <button class="accordion">
+                  <input type='checkbox' id='question-6'>
+                  <label for='question-6'>A Netflix é adequada para crianças?</label>
+                  <div class='answer'>A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos pais.
+                  </div>
+              </button>
+          </div>
+          <form class="cta-form email-form" method="GET">
+            <h1 class="text-form">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h1>  
+            <ul class="simpleform">
+                <li>           
+                    <label class="input-id" placeholder="email">
+                        <input type="email" name="email" autoComplete="email" placeholder="Email"/>
+                    </label>
+                </li>
+            </ul>
+            <button class="btn-custom"  type="submit" role="link" autoComplete="off">
+                <span>Vamos lá</span>
+            </button>
+                </div>
             </div>
-        </nav>
-    </section>
+        </form>
           <footer class="footer">
             <p>Dúvidas? Ligue <a href="tel: 0800-761-4631">0800-761-4631</a></p>
             <ul>
@@ -161,20 +199,10 @@
                 <li>Avisos legais</li>
                 <li>Só na Netflix</li>
             </ul>
-            <form class="cta-form email-form" method="GET">  
-                <ul class="simpleform">
-                    <li>           
-                        <label class="input-id" placeholder="email">
-                            <input type="email" name="email" autoComplete="email" placeholder="Email"/>
-                        </label>
-                    </li>
-                </ul>
-                <button class="btn-custom"  type="submit" role="link" autoComplete="off">
-                    <span>Vamos lá</span>
-                </button>
-                    </div>
-                </div>
-            </form>
+            <select class="select-linguage"><i class="fa fa-globe" aria-hidden="true"></i> 
+              <option>Português</option>
+              <option>English</option>   
+            </select>
           <p class="footer-country">&copy; Netflix Brasil.</p>
         </footer>
     </body>
